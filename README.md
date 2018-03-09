@@ -1,5 +1,6 @@
 # LearnMaths-
-C# ASP.NET project to learn algebra expressions 
+C# ASP.NET Web App
+Learning algebra expressions 
 
 **requirements**:
 * microsoft.ace.oledb.12.0

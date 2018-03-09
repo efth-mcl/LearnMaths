@@ -10,7 +10,7 @@ Learning algebra expressions
 
 Deploy:
 1. Create ASP.NET Empty Web Site.
-2. On Solution Explorer right click on project's name, Copy Web Site.
+2. On Solution Explorer right click on project's name and click on Copy Web Site.
 3. Browse LearnMath!!! folder and copy all files.
 4. Run the project!!! 
 

@@ -1,0 +1,200 @@
+﻿html, body {
+     font-family:'Lucida Grande', Geneva, Verdana,Tahoma,Verdana,Arial,sans-serif;
+     background-color:#344a68;
+     margin:0;
+     width:100%;
+}
+/*TOP BIGIN*/
+.banner {
+    margin-top: 1%;
+    height: 500px;
+    width: 100%;
+    background-image: url('/Images/math6.jpg');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+/*TOP END*/   
+    
+    
+/*NAVIGATION BIGNIN*/
+ul.navigation {
+    list-style-type: none;
+    margin:2% 0 0 3%;
+    padding: 0;
+    overflow: hidden;
+    background-color: #151e4a;
+    
+    -webkit-transform: skewX(25deg);
+    width:94%;
+}
+ul.navigation li {
+    float: left;
+
+}
+ul.navigation li #UserPic {
+        cursor: default;
+        width:90px;
+        height: 90px;
+        background-image: url('../Images/pi_defult.png');
+        background-size:100% 100%;
+}
+ul.navigation li .button
+{
+    -webkit-transform: skewX(-25deg);
+    background:none;
+    border:none;
+    color: white;
+    padding: 24px 24px;
+    display:marker;
+    font-size: 22px;
+    cursor:pointer;
+    height:100%;
+
+}
+ul.navigation li:hover{
+    background-color: #060a2e;
+}
+ul.navigation li.ProfileMenu {
+    float: right;
+}
+ul.navigation li.ProfileMenu ul
+{
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+}
+@media screen and (max-width: 1018px){
+    ul.navigation
+    {
+        -webkit-transform: skewX(0);
+        width:100%;
+        margin:2% 0 0 0;
+    }
+    ul.navigation li.ProfileMenu,
+    ul.navigation li {
+        
+        float: none;
+    }
+     ul.navigation li .button
+     {
+         -webkit-transform: skewX(0);
+         width:100%;
+     }
+     ul.navigation li  #UserPic{
+         display:none;
+    }
+}
+/*NAVIGATION END*/
+
+#content_area
+{
+    float:left;
+    width:80%;
+    margin:20px 0 20px 0;
+    padding:2%;
+    color:#0F5BCD;
+    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.72);
+    margin-left:10%;
+    background-color:#ffffff;
+}
+
+#footer
+{
+    color:white;
+    height:10%;
+    width:100%;
+    float:left;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+}
+.ParGap{
+    margin-left:15px;
+}
+.ScrollTop {
+    background-color: rgba(0, 0, 0, 0.00);
+    background-image: url('../Images/GoTop.png');
+    background-size:100% 100%;
+    display:none;
+    width:5%;
+    bottom: 10%;
+    left: 1%;
+    position: fixed;
+    cursor: pointer;
+    opacity: 0.50;
+    transition:0.5s;
+}
+.ScrollTop:hover
+{
+    opacity:1;
+    bottom:11%;
+}
+.helpDiv {
+    background-size:100% 100%;
+    background-image: url('../Images/help-icon.png');
+    right: 0.5%;
+    width: 5%;
+}
+#Canvas
+{
+    margin-top:2%;
+    display:none;
+}
+
+.News ul
+{
+    list-style-type:none;
+}
+.rmM {
+    cursor:pointer;
+    width: 100px;
+    background-image: url('../Images/rm-Message.png');
+    background-repeat:no-repeat;
+    background-size:50% 50%;
+    background-position:right bottom;
+}
+
+
+/* Sweep To Right */
+.hvr-sweep-to-right {
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-right:before {
+     content: "";
+     position: absolute;
+     z-index: -1;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: #2098d1;
+     -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+    color: white;
+}
+
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}

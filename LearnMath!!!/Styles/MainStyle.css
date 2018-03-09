@@ -1,0 +1,194 @@
+﻿body {
+     font-family:'Lucida Grande', Geneva, Verdana,Tahoma,Verdana,Arial,sans-serif;
+     background-color:#344a68;
+     margin:0;
+} 
+#banner
+{
+    margin-top:15px;
+    background-image:url(../Images/math6.jpg);
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    position: relative;
+}
+
+
+.form {
+  
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 500px;
+  margin: 60px auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form .Button {
+  
+  text-transform: uppercase;
+  outline: 0;
+  background: #344a68;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+}
+.form .button:hover{
+  background: #1e324e;
+}
+
+.Radio input[type=radio]
+{
+    display:none;
+}
+.Radio label:hover
+{
+    background-color:azure;
+}
+.Radio input[type=radio]:checked + label
+{
+    background-color:#608dce;
+    color: #f2f2f2;
+}
+.Radio label
+{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    position:relative;
+    padding:3%;
+    font-size: 15px;
+    border: 1px solid  #4CAF50;
+    color: #1e324e;
+    text-decoration: none;
+    cursor:pointer;
+}
+.Radio
+{
+    margin-top:20px;
+    margin-bottom:30px;
+}
+#menu
+{   
+   margin:0 auto 6%;
+   font-size:0;
+}
+.Celect
+{
+   background: #344a68;
+   color:white;
+}
+a
+{
+    position:relative;
+    top:22%;
+    padding:3%;
+    font-size: 22px;
+    border: 1px solid  #344a68;
+    color: #344a68;
+    text-decoration: none;
+}
+
+.register-form {
+ display:none;
+}
+#footer
+{
+    color:white;
+    clear:both;
+    width:auto;
+    height:50px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+}
+.arrowEmail
+{
+border-style: solid;
+border-width: 10px 17.3px 10px 0;
+border-color: transparent #2071c7 transparent transparent;
+position:absolute;
+margin-left:80%;
+ display:none;
+}
+.MessageEmailBox
+{
+    font-family: "Roboto", sans-serif;
+    position:absolute;
+    border:2px solid #2071c7;
+    background-color:rgba(242, 242, 242, 0.95);
+    min-width:40%;
+    margin-top:11%;
+    height:auto;
+    margin-left:89%;
+    padding:1%;
+    text-align:inherit;
+    display:none;
+}
+.MessageEmailBox > p 
+{
+    padding:2%;
+    color:rgb(221, 83, 22);
+}
+.arrowPass
+{
+position:absolute;
+float:right;
+left:2%;
+border-style: solid;
+border-width: 10px 0 10px 17.3px;
+border-color: transparent transparent transparent #2071c7;
+display:none;
+}
+.MessagePassBox
+{
+    font-family: "Roboto", sans-serif;
+    position:absolute;
+    border:2px solid #2071c7;
+    background-color:rgba(242, 242, 242, 0.95);
+    min-width:40%;
+    min-height:15%;
+    right:98%;
+    padding:1%;
+    margin-top:2%;
+    text-align:inherit;
+    display:none;
+}
+.MessagePassBox > p
+{
+    padding:2%;
+    color:rgb(221, 83, 22);
+}
+.MessageEmptyBox
+{
+    font-family: "Roboto", sans-serif;
+    position:absolute;
+    border:2px solid #2071c7;
+    background-color:rgba(242, 242, 242, 0.95);
+    min-width:75%;
+    padding:1%;
+    top:-9%;
+    left:11%;
+    display:none;
+}
+.MessageEmptyBox > p
+{
+    padding:2%;
+    color:rgb(221, 83, 22);
+    margin:0;
+    
+}

@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Learn Math!</title>
+    <link rel="shortcut icon" href="Images/website%20icon.ico"/>
+    <link href="frameworks/PopUp/x0popup.css" rel="stylesheet" />
+    <link href="Styles/MasterPageStyle.css" rel="stylesheet" />
+
+       <script src="../frameworks/JQuery/query-1.12.2.min.js"></script>
+       <script src="../Scripts/MasterPageScript.js"></script>
+       <script src="../frameworks/PopUp/x0popup.min.js"></script>
+
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        tex2jax: 
+        {
+            inlineMath: [['$','$'], ['\\(','\\)']]
+        },
+        messageStyle: "none"
+       });
+       </script>
+       <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'>
+       </script>
+   
+    
+  <asp:ContentPlaceHolder id="head" runat="server">
+       
+  </asp:ContentPlaceHolder>
+  
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <div class="banner">   
+        </div>
+       <ul class="navigation">
+           <%-- Styd Mennu --%>
+            <li><asp:Button  class="button" ID="StudentHome" runat="server" Text="Αρχική σελίδα" OnClick="StudentHome_Click" Visible="False" /></li>
+            <li><asp:Button  class="button" ID="StudentStats" runat="server" Text="Στατιστικά" OnClick="StudentStats_Click" Visible="False" /></li>
+            <li><asp:Button  class="button" runat="server" Text="Κεφάλαια - Θεωρία" ID="Lessons_B" OnClick="Lesson_Click" Visible="False" /></li>  
+           <li><asp:Button  class="button" runat="server" Text="Tests" ID="GotoTests" OnClick="GotoTests_Click" Visible="False" /></li>
+           <li><asp:Button  class="button" runat="server" Text="Τελικό test" ID="FinalTest" OnClick="FinalTest_Click" Visible="False"  /></li>
+           <%-- Prof Mennu --%>
+            <li><asp:Button  class="button" ID="ProfHome" runat="server" Text="Αρχική σελίδα" OnClick="ProfHome_Click" Visible="False"  /></li>
+            <li><asp:Button  class="button" ID="Studens_Stats" runat="server" Text="Πρόοδος μαθητών" OnClick="Studens_Stats_Click" Visible="False" /></li>
+            <li></li>
+            <li><asp:Button  class="button" ID="CreateUser" runat="server" Text="Δημιουργία χρήστη" OnClick="CreateUser_Click" Visible="False" /></li>
+           <%-- Editor --%>
+            <li><asp:Button  class="button" ID="EditorHome" runat="server" Text="Αρχική σελίδα" Visible="False" OnClick="EditorHome_Click"  /></li>
+           <li><asp:Button  class="button" ID="EditUsers" runat="server" Text="Διαχείριση Χρηστών" Visible="False" OnClick="EditUsers_Click"  /></li>
+           <li  class="ProfileMenu">
+                    <ul>
+                     
+                         <li><asp:Button  class="button" ID="LogOut" runat="server" Text="Log Out" OnClick="LogOut_Click"/></li>
+                    </ul>
+           </li>
+           
+           
+           
+           
+        </ul>
+        
+    <div class="helpDiv"></div>
+        <div id="content_area">
+         
+
+            <asp:contentplaceholder id="content_area1" runat="server" />
+        </div>
+        <div class="ScrollTop"></div>
+          <div id="footer">
+             <p><br /> Email καθηγητών:
+               <span style="margin-left:25px;">Χάρης Βάλσαμος: Haris@papei.com</span><span style="margin-left:35px;">Ευθύμης Μιχάλης: Efthymis@papei.com</span>
+                </p>
+        </div> 
+    </form>
+</body>
+</html>

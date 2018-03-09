@@ -1,0 +1,71 @@
+﻿.class1 > h1
+{
+    font-family: "Roboto", sans-serif;
+    padding:20px;
+    background-color:#473FAF;
+    text-align:center;
+    margin:0;
+    color:white;
+}
+.class1
+{
+    
+}
+.Lesson > h1
+{
+    text-align:center;
+    padding:0.5%;
+    border-bottom:2px solid #00ff21;
+}
+.underline
+{
+    border-bottom:1px solid #ff0000;
+} 
+.Chapters
+{
+    list-style-type:none;
+    width:80%;
+}
+
+.Chapters div
+{
+    font-family: "Roboto", sans-serif;
+    position:relative;
+    padding:1% 0 1% 1%;
+    font-size: 15px;
+    color:white;
+    cursor: not-allowed;
+    margin-top:1%;
+    width:25%;
+    background-color:rgba(71, 63, 175, 0.70);
+}
+.OK div {
+    opacity:1;
+    cursor:pointer;
+    background-color:rgba(71, 63, 175,1);
+}
+
+
+.TestB
+{
+     color:white;
+     display:none;
+     cursor:pointer;
+     background-color:#473FAF;
+     float:right;
+     padding:1.2%;
+
+ }
+
+.ParGap
+{
+    margin-left:30px;
+}
+.video{
+    margin-top:8%;
+    margin-left:30%;
+}
+.Lesson
+{
+    position:relative;
+}

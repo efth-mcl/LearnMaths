@@ -1,4 +1,4 @@
-# LearnMaths-
+# LearnMaths
 C# ASP.NET Web App<br>
 Learning algebra expressions 
 
@@ -14,8 +14,12 @@ Deploy:
 3. Browse LearnMath!!! folder and copy all files.
 4. Run the project!!! 
 
+Demo page:
+
+WebSite __[link](https://website520180308022850.azurewebsites.net/MainPage.aspx)__ 
+
 Existed Users:
-	
+
 | email               | Passwords    |   Role | 
 |--------------------|--------------|------------------------------------------------------------|
 | Efthymis@papei.com  |  123456789   |  Professor                                                  |
@@ -24,6 +28,3 @@ Existed Users:
 | efthymis@example.com|  efthymis    |  Student  (all tests have been completed)                   |
 | Npapa@example.com   |  123456789   |  Student  (inactive) *Professor and Editor activate Students|
 | Gpapant@gmail.com   |  123456789   |  Student  (some tests have been completed)                  |
-
-
-__[Go](https://website520180308022850.azurewebsites.net/MainPage.aspx)__ to WebSite 
